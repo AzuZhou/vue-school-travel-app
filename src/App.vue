@@ -2,18 +2,16 @@
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="nav">
+    <router-link to="/">Home</router-link>
+    <router-link to="/brazil">Brazil</router-link>
+    <router-link to="/hawaii">Hawaii</router-link>
+    <router-link to="/jamaica">Jamaica</router-link>
+    <router-link to="/panama">Panama</router-link>
   </div>
-  <br>
-  <router-link to="/">Home</router-link>
-  <router-link to="/about">About</router-link>
-  <router-view></router-view>
+  <div class="container">
+    <router-view></router-view>
+  </div>
 </template>
 
 <style scoped>
