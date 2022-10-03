@@ -19,7 +19,7 @@
             </router-link>
         </div>
     </section>
-
+    <router-view />
 </template>
 
 <script>
